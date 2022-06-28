@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task day 1</title>
+
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/26139/pexels-photo-26139.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+
+        }
+
+        .main {
+            background-color: #d5d3d3a1;
+            width: 800px;
+            margin: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            padding-top: 2px;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-bottom: 30px;
+            font-size: 17px;
+            box-shadow: 1px 0px 20px 0px black;
+        }
+
+        .heading {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .pad {
+            padding: 10px;
+        }
+
+        .input {
+            padding: 5px;
+            border: 1px solid grey;
+            border-radius: 7px;
+            margin: 7px;
+        }
+
+        #address_input {
+            width: 433px;
+            height: 34px;
+        }
+
+        button{
+            text-align: center;
+    width: 215px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 14px;
+    border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="main" action="backend.php">
+        <div class="heading">
+            <h1>Silver Oak Hotel Registeration</h1>
+        </div>
+
+        <div class="pad name" id="name">
+            <label for="name">Name</label>
+            <div>
+                <input class="input" type="text" placeholder="First Name" name="first_name" id="first_name" required>
+                <input class="input" type="text" placeholder="Last Name" name="last_name" id="last_name" required>
+            </div>
+        </div>
+
+        <div class="pad address" id="address">
+            <label for="address">Address</label>
+            <div>
+                <input class="input" type="text" placeholder="Address" name="address" id="address_input"
+                    required></input>
+            </div>
+            <input class="input" type="text" placeholder="City" name="City" id="City_input" required>
+            <input class="input" type="text" placeholder="State" name="State" id="State_input" required>
+        </div>
+
+
+
+        <div class="pad pincode" id="pincode">
+            <label for="pincode">Pin Code</label>
+            <div>
+                <input class="input" type="number" name="pincode" id="pincode_input">
+            </div>
+        </div>
+
+        <div class="pad email" id="email">
+            <label for="email">Email</label>
+            <div>
+                <input class="input" type="number" placeholder="manan@gmail.com" name="email" id="email_input">
+            </div>
+        </div>
+
+        <div class="pad contact" id="contact">
+            <label for="contact">Contact No.</label>
+            <div>
+                <input class="input" type="tel" placeholder="(+91) 8567892315" name="contact" id="contact">
+            </div>
+        </div>
+
+        <div class="pad checkInDate" id="checkInDate">
+            <label for="CheckInDate">Check In Date</label>
+            <input class="input" type="date" placeholder="DD-MM-YYYY">
+            <label class="input" for="CheckOutDate">Check Out Date</label>
+            <input type="date" placeholder="DD-MM-YYYY">
+        </div>
+
+        <div class="pad roomShare" id="roomShare">
+            <label for="roomShare">No. of Students Share Room</label>
+            <div>
+                <input class="input" placeholder="ex:3" type="number" name="roomShare" id="roomShare_input">
+            </div>
+        </div>
+
+        <div class="pad wifi" id="wifi">
+            <label for="wifi_title">Do you wan't wifi</label>
+            <div>
+                <label for="wifi">Yes</label>
+                <input class="input" type="radio" name="wifi" id="wifi_yes_input">
+                <label for="wifi">No</label>
+                <input class="input" type="radio" name="wifi" id="wifi_no_input">
+            </div>
+        </div>
+
+        <div class="pad pickupdate" id="pickupdate">
+            <label for="pickupdate">Pickup Date</label>
+            <div>
+                <input class="input" type="date" name="pickupdate" id="pickupdate_input">
+            </div>
+        </div>
+
+        <div class="pad pickuptime" id="pickuptime">
+            <label for="pickuptime">Pickup Date</label>
+            <div>
+                <input class="input" placeholder="HH:MM" type="time" name="pickuptime" id="pickuptime_input">
+            </div>
+        </div>
+
+        <div class="pad pickuplocation" id="pickuplocation">
+            <label for="pickuplocation">pickuplocation</label>
+            <div>
+                <textarea class="input" name="pickuplocation" id="pickuplocation_input" cols="30" rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="pad amount" id="amount">
+            <label for="amount">Total amount</label>
+            <div>
+                <input class="input" type="number" name="amount" id="amount_input">
+            </div>
+        </div>
+
+        <div class="p">
+            <p>
+                The submission of this form makes a reservation for the type of room selected in the form. Any changes
+                prior the scheduled occupancy should be communicated to us at <strong> least 24 hours prior</strong>,
+                which may be subject to availability of request. Check-in time shall be at 2:00PM and checkout time
+                shall be at 12:00NN.
+            </p>
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
