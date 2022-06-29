@@ -1,0 +1,81 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.courses {
+    width: 20;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.coursesDiv {
+    text-align: center;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 0px #b7b7b7;
+    transition: 0.1s;
+}
+
+
+#heading {
+    background-image: url("https://static.collegedekho.com/media/img/institute/crawled_images/None/silver-oak-university-gota-road-ahmedabad-colleges-70312k1sn3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 350px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 18px rgb(5 5 5);
+    font-size: 40px;
+
+}
+
+#subHeading{
+    margin-top: 29px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 29px;
+}
+
+button{
+    background: #b70606;
+    color: white;
+    border-radius: 4px;
+    width: 78px;
+    height: 27px;
+    margin-top: 13px;
+    transition: 0.5s;
+    border: 0px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 14px;
+}
+
+button:hover{
+    background: #e10303;
+    border: 0px;
+}
+
+
+#courses1:hover, #courses2:hover, #courses3:hoverv, #courses4:hover, #courses5:hover, #courses6:hover{
+    box-shadow: 0 0 30px 0px #b7b7b7;
+}
